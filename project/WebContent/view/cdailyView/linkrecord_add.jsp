@@ -4,7 +4,7 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 	<head>
 		<base href="<%=basePath%>">
@@ -19,8 +19,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<LINK href="<%=basePath%>resource/css/admin.css" type=text/css
 			rel=stylesheet>
 			
-	<script type="text/javascript" src="<%=basePath%>resource/js/CheckForm.js"></script>
-	<script type="text/javascript" src="<%=basePath%>resource/js/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="<%=basePath%>resource/js/CheckForm.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="<%=basePath%>resource/js/My97DatePicker/WdatePicker.js" charset="UTF-8"></script>
 	</head>
 
 	<body>
